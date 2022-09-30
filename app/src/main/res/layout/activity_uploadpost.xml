@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_uploadpost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gl.geolocator.UploadPostActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/uiv"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center"
+        android:layout_centerInParent="true"
+        android:background="@android:color/background_dark" />
+
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/uploadButton"
+        android:layout_alignParentStart="true"
+        android:hint="Caption"
+        android:maxLength="144"
+        android:minHeight="48dp"
+        android:textColor="@android:color/holo_red_light"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColorHint="@color/colorAccent" />
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:onClick="cancel"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@android:drawable/ic_menu_save"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:onClick="saveImage" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadButton"
+        android:onClick="uploadImage"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Upload"
+        android:layout_marginBottom="5dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textColor="@android:color/black" />
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/activity_main5"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    tools:context="com.gl.geolocator.ProfileActivity">
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="changeProfilePic"
+        android:src="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameuser"
+        android:layout_toEndOf="@+id/profile_pic"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_pic">
+        <!--<ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView1"
+        android:layout_below="@+id/profile_pic"
+        android:background="#FFF2F2F2" />-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/myPosts_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_pic"
+            android:background="#FFF2F2F2"
+            android:scrollbars="vertical"
+            android:visibility="visible" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+<!--android:divider="@null"-->
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/fab1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_above="@+id/fab2"
+    android:layout_margin="16dp"
+    app:srcCompat="@android:drawable/ic_menu_upload_you_tube" />
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/fab2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_margin="16dp"
+    app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <TextView
+        android:id="@+id/nameuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/profile_pic"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+<!--<TextView
+    android:text="Close Friends : "
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toEndOf="@+id/profpic"
+    android:layout_below="@+id/nameuser"
+    android:id="@+id/followers"
+    android:textStyle="bold"
+    android:textSize="18sp" />-->
+</RelativeLayout>

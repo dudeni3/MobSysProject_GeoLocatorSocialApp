@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/avatar" />
+    <TextView
+        android:id="@+id/un"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:typeface="sans"
+        android:textSize="18sp"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginStart="9dp"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="360dip"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:foregroundGravity="center"
+        android:onClick="imgclick"
+        android:paddingTop="@dimen/activity_vertical_margin" />
+
+    <TextView
+        android:id="@+id/captionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:textStyle="bold"
+        android:layout_below="@+id/image"
+        android:textSize="18sp"
+        android:typeface="sans"
+        android:layout_marginStart="9dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:id="@+id/hearts1"
+        android:background="@mipmap/dhearts"
+        android:layout_below="@+id/captionTextView"
+        android:onClick="hclick" />
+
+    <TextView
+        android:id="@+id/locationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/captionTextView"
+        android:layout_toEndOf="@+id/hearts1" />
+
+</RelativeLayout>

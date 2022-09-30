@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "898235064940",
+    "firebase_url": "https://geoloc-social-app-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "geoloc-social-app",
+    "storage_bucket": "geoloc-social-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898235064940:android:c430dd8d784c014dab2e49",
+        "android_client_info": {
+          "package_name": "com.gl.geolocator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898235064940-pj2losc47q2lagt2qu47jbebqcctgk53.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gl.geolocator",
+            "certificate_hash": "f0c05b77c8ee716760ae2bb5784580e6f34e4ca6"
+          }
+        },
+        {
+          "client_id": "898235064940-8sb3ioes09g21rsudqpve9fcp8lqg4b8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWjhD_4O5yvERx-151RU9iPMWCUNzzBZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898235064940-8sb3ioes09g21rsudqpve9fcp8lqg4b8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
